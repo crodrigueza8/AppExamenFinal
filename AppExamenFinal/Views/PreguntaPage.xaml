@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppExamenFinal.Views.PreguntaPage"
+             Shell.NavBarIsVisible="False"
+             NavigationPage.HasNavigationBar="False">
+    <VerticalStackLayout VerticalOptions="Center" Padding="20,0,20,0">
+        
+        <Label  Text="ASK" TextColor="Black"  FontSize="25" FontAttributes="Bold" Margin="0,0,0,0" HorizontalOptions="CenterAndExpand" VerticalOptions="Start" Padding="20"/>
+      
+        <DatePicker x:Name="Date" FontSize="20"  Margin="0,20,0,0"  TextColor="Black" />
+
+        <Entry x:Name="TxtAsk" Placeholder="Pregunta" FontSize="20" Keyboard="Text" IsPassword="True" Margin="0,20,0,20" TextColor="Black"/>
+
+        <Entry x:Name="TxtUserID" Placeholder="Codigo Usuario" FontSize="20" Keyboard="Text" IsPassword="True" Margin="0,20,0,20" TextColor="Black"/>
+
+        <Entry x:Name="TxtAskStatusID" Placeholder="Estado de pregunta" FontSize="20" Keyboard="Text" IsPassword="True" Margin="0,20,0,20" TextColor="Black"/>
+
+        <Entry x:Name="TxtIsStrike" Placeholder="IsStrike" FontSize="20" Keyboard="Text" IsPassword="True" Margin="0,20,0,20" TextColor="Black"/>
+
+        <Entry x:Name="TxtImageUrl" Placeholder="ImagenURL" FontSize="20" Keyboard="Text" IsPassword="True" Margin="0,20,0,20" TextColor="Black"/>
+        
+        <Entry x:Name="TxtAskDetail" Placeholder="Detalle de pregunta" FontSize="20" Keyboard="Url" IsPassword="True" Margin="0,20,0,20" TextColor="Black"/>
+
+        <Button x:Name="BtnAgregar" Text="Agregar" BackgroundColor="Green" TextColor="WhiteSmoke" FontSize="20" WidthRequest="200" HeightRequest="60" Margin="0, 5, 0, 15"  />
+
+
+
+    </VerticalStackLayout>
+</ContentPage>

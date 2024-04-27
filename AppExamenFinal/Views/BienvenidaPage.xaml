@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppExamenFinal.Views.BienvenidaPage"
+             Shell.NavBarIsVisible="False"
+             NavigationPage.HasNavigationBar="False">
+
+    <VerticalStackLayout VerticalOptions="Center" Padding="20,0,20,0">
+        
+        <Label  Text="Bienvenido" TextColor="Black"  FontSize="25" FontAttributes="Bold" Margin="0,0,0,0" HorizontalOptions="CenterAndExpand" VerticalOptions="Start" Padding="20"/>
+
+        <Entry x:Name="Username" Placeholder="UserName" FontSize="20" Keyboard="Email" Margin="0,20,0,0"  TextColor="Black"/>
+
+        <Entry x:Name="TxtPassword" Placeholder="Password..." FontSize="20" Keyboard="Text" IsPassword="True" Margin="0,20,0,20" TextColor="Black"/>
+
+
+
+        <Button x:Name="BtnIngresar" Text="Login" BackgroundColor="Green" TextColor="WhiteSmoke" FontSize="20" WidthRequest="200" HeightRequest="60" Margin="0, 5, 0, 15" Clicked="BtnIngresar_Clicked" />
+
+    </VerticalStackLayout>
+</ContentPage>
